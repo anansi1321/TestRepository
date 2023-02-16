@@ -76,9 +76,11 @@
 						<update>true</update>
 					</configuration>
 				</plugin>
-				
-				
-				<plugin>
+			</plugins>
+		</pluginManagement>
+		<!-- 
+		<plugins>
+			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 				<configuration>
@@ -90,11 +92,6 @@
 					</excludes>
 				</configuration>
 			</plugin>
-			</plugins>
-		</pluginManagement>
-		<!-- 
-		<plugins>
-			
 		</plugins>
 		 -->
 	</build>
