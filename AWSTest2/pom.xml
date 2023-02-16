@@ -61,23 +61,6 @@
 	<build>
 		<finalName> AWSTest2 </finalName>
 		
-		<pluginManagement>
-			<plugins>
-				<plugin>
-					<groupId>org.apache.tomcat.maven</groupId>
-					<artifactId>tomcat7-maven-plugin</artifactId>
-					<version>2.2</version>
-					<configuration>
-						<server>github</server>
-						<path>/${project.build.finalName}</path>
-						<url>${mvn_project.url}</url>
-						<username>${mvn_project.username}</username>
-						<password>${mvn_project.password}</password>
-						<update>true</update>
-					</configuration>
-				</plugin>
-			</plugins>
-		</pluginManagement>
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
@@ -91,6 +74,20 @@
 					</excludes>
 				</configuration>
 			</plugin>
+			
+			<plugin>
+					<groupId>org.apache.tomcat.maven</groupId>
+					<artifactId>tomcat7-maven-plugin</artifactId>
+					<version>2.2</version>
+					<configuration>
+						<server>github</server>
+						<path>/${project.build.finalName}</path>
+						<url>${mvn_project.url}</url>
+						<username>${mvn_project.username}</username>
+						<password>${mvn_project.password}</password>
+						<update>true</update>
+					</configuration>
+				</plugin>
 		</plugins>
 	</build>
 
