@@ -59,7 +59,7 @@
 	</dependencies>
 
 	<build>
-		<finalName> AWSTest2 </finalName>
+		<finalName>AWSTest2</finalName>
 		
 		<plugins>
 			<plugin>
