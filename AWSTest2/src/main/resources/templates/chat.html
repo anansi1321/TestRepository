@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+	xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+<head>
+<title>Bootstrap Example</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet"
+	href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+<script
+	src="https://cdn.jsdelivr.net/npm/jquery@3.6.3/dist/jquery.slim.min.js"></script>
+<script
+	src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<script
+	src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+<script type="text/javascript"
+	src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+<script type="text/javascript" src="js/chat.js"></script>
+</head>
+
+<body>
+
+	<div class="container">
+		<div class="jumbotron jumbotron-fluid alert-success">
+			<div class="container">
+				<p>2022 광주지역 산업구조 변화 대응 등 특화훈련</p>
+				<h1>디지털 산업융합 빅데이터 플랫폼개발자 과정 2회차</h1>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-lg-2"></div>
+
+			<div class="col-lg-8">
+
+				<div class="card" style="height:600px;">
+					<!-- chat body -->
+					<div class="card-body" style="overflow-y:scroll;" id="chatBody">
+							<div id="msgArea" style="height : 100%">
+							<!-- 메세지가 작성되는 영역 -->
+							
+							</div>
+							
+					</div>
+					<!-- chat body end -->
+					
+					<!-- chat input -->
+					<div style="text-align: center;">
+						<div class="row">
+							<div class="col-lg-1"></div>
+							<div class="input-group col-lg-10">
+								<input id="userId" class="form-control" placeholder="아이디를 입력해야 채팅 사용가능">
+								<button id="idSelect" class="btn btn-sm btn-success">아이디 결정</button>
+							</div>
+						</div>
+					
+						<br>
+					
+						<div class="row">
+						<div class="col-lg-1"></div>
+						<div class="input-group col-lg-10">
+							<input type="text" id="msg" class="form-control"
+								aria-label="Recipient's username"
+								aria-describedby="button-addon2">
+							<div class="input-group-append">
+								<button class="btn btn-sm btn-info" type="button"
+									id="button-send" disabled>전송</button>
+							</div>
+						</div>
+						</div>
+					</div>
+					<!-- chat input end -->
+					
+					
+				</div>
+			</div>
+		</div>
+
+		<div class="col-lg-2"></div>
+	</div>
+
+
+
+</body>
+
+
+</html>
